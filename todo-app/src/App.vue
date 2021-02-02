@@ -8,7 +8,6 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import todoHeader from '@/components/todoHeader'
 import todoInput from '@/components/todoInput'
 import todoList from '@/components/todoList'
@@ -28,8 +27,25 @@ export default {
 </script>
 
 <style>
-#app div{
+#app{
+  margin: 0;
+  padding: 0;
   outline: 1px solid red;
   font-size:1em;
+}
+button{
+  outline: none;
+  border: none;
+  background:transparent;
+  font-size:1em;
+}
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+button:hover{
+  color:#fff;
+  transition:all ease 0.3s ;
 }
 </style>
